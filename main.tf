@@ -32,7 +32,6 @@ resource "aws_ssm_parameter" "openai_api_key" {
   description = "API Key for OpenAI"
   type        = "SecureString"
   value       = var.openai_api_key
-  overwrite   = true
 }
 
 data "aws_region" "current" {}
